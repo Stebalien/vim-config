@@ -22,3 +22,9 @@
 [submodule "ShowMarks"]
 	path = ShowMarks
 	url = git://github.com/vim-scripts/ShowMarks.git
+[submodule "bundle/ShowMarks"]
+	path = bundle/ShowMarks
+	url = git://github.com/vim-scripts/ShowMarks.git
+[submodule "bundle/lua-inspect"]
+	path = bundle/lua-inspect
+	url = git://github.com/davidm/lua-inspect.git

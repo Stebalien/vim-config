@@ -1,8 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/home/steb/.vim'
 let g:netrw_dirhist_2='/home/steb/Documents/Code/Websites/maa/templates/firm'
 let g:netrw_dirhist_3='/home/steb'
 let g:netrw_dirhist_4='/boot/syslinux'
 let g:netrw_dirhist_5='/home/steb/Downloads/conky_colors/conkycolors/scripts'
 let g:netrw_dirhist_6='/home/steb/.vim/bundle/pyflakes/ftplugin/python/pyflakes'
+let g:netrw_dirhist_7='/home/steb'

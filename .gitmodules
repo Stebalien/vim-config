@@ -19,12 +19,12 @@
 [submodule "bundle/pyflakes"]
 	path = bundle/pyflakes
 	url = git://github.com/kevinw/pyflakes-vim.git
-[submodule "ShowMarks"]
-	path = ShowMarks
-	url = git://github.com/vim-scripts/ShowMarks.git
-[submodule "bundle/ShowMarks"]
-	path = bundle/ShowMarks
-	url = git://github.com/vim-scripts/ShowMarks.git
-[submodule "bundle/lua-inspect"]
-	path = bundle/lua-inspect
-	url = git://github.com/davidm/lua-inspect.git
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = git://github.com/scrooloose/nerdcommenter.git
+[submodule "bundle/vim-repeat"]
+	path = bundle/vim-repeat
+	url = git://github.com/tpope/vim-repeat.git
+[submodule "bundle/vim-surround"]
+	path = bundle/vim-surround
+	url = git://github.com/tpope/vim-surround.git

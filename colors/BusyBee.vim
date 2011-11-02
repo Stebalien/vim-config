@@ -60,3 +60,7 @@ hi pythonOperator  guifg=#7e8aa2 gui=none ctermfg=103
 hi pythonBuiltinFunction guifg=#009000 gui=none ctermfg=200
 hi pythonExClass   guifg=#009000 gui=none ctermfg=200
 
+" Indent
+hi IndentGuidesOdd  ctermbg=234
+hi IndentGuidesEven ctermbg=235
+

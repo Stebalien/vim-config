@@ -4,9 +4,6 @@
 [submodule "bundle/pydiction"]
 	path = bundle/pydiction
 	url = git://github.com/vim-scripts/Pydiction.git
-[submodule "bundle/vimwiki"]
-	path = bundle/vimwiki
-	url = git://github.com/vim-scripts/vimwiki.git
 [submodule "bundle/pydoc"]
 	path = bundle/pydoc
 	url = git://github.com/fs111/pydoc.vim.git

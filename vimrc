@@ -8,7 +8,7 @@ set number
 set hls
 set autoindent
 set cursorline
-set showtabline=2   " Always show tabs
+set showtabline=1   " Always show tabs
 set expandtab       " Everything I write uses spaces
 set tabstop=4
 set shiftwidth=4

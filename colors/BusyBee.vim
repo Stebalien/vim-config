@@ -64,3 +64,6 @@ hi pythonExClass   guifg=#009000 gui=none ctermfg=200
 hi IndentGuidesOdd  ctermbg=234
 hi IndentGuidesEven ctermbg=235
 
+hi TabLineFill term=bold ctermbg=232 cterm=bold
+hi TabLine term=bold ctermbg=232 cterm=bold ctermfg=245
+hi TabLineSel term=bold ctermfg=255

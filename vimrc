@@ -15,13 +15,7 @@ set shiftwidth=4
 
 " Autocomplete
 set completeopt=longest,menuone
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
-  \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
-inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
-  \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
-highlight Pmenu ctermbg=blue ctermfg=white
-
+let g:SuperTabDefaultCompletionType = "context"
 
 " Highlight problematic whitespace (spaces before tabs)
 hi RedundantSpaces ctermfg=214 ctermbg=160 cterm=bold
@@ -45,11 +39,14 @@ let g:indent_guides_enable_on_vim_startup = 1
 
 
 " Navigate tabs with tabs
-imap <C-t> <Esc>:tabnew<CR>
-map t :tabnew<CR>:e 
-map <Tab> :tabn<CR>
-map <S-Tab> :tabp<CR>
-map [Z :tabp<CR>
+imap <C-t> <Esc>:tabnew<CR>:e 
+map <C-t> :tabnew<CR>:e 
+"map t :tabnew<CR>:e 
+"map <Tab> :tabn<CR>
+"map <S-Tab> :tabp<CR>
+"map [Z :tabp<CR>
+
+
 
 map <C-p> "*p
 map <C-y> "*y

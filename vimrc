@@ -1,3 +1,6 @@
+" Global settings
+set encoding=utf8
+
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
@@ -12,14 +15,20 @@ set showtabline=1   " Always show tabs
 set expandtab       " Everything I write uses spaces
 set tabstop=4
 set shiftwidth=4
+set cindent
 
 " Autocomplete
 set completeopt=longest,menuone
+set wildmode=longest,full
+set wildmenu
 let g:SuperTabDefaultCompletionType = "context"
 
 " Highlight problematic whitespace (spaces before tabs)
 hi RedundantSpaces ctermfg=214 ctermbg=160 cterm=bold
 match RedundantSpaces / \+\ze\t/
+
+" Taglist
+nnoremap <silent> <F8> :TlistToggle<CR>
 
 " In case I forget to start as root
 cmap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>
@@ -39,8 +48,8 @@ let g:indent_guides_enable_on_vim_startup = 1
 
 
 " Navigate tabs with tabs
-imap <C-t> <Esc>:tabnew<CR>:e 
-map <C-t> :tabnew<CR>:e 
+imap <C-t> <Esc>:tabnew 
+map <C-t> :tabnew 
 "map t :tabnew<CR>:e 
 "map <Tab> :tabn<CR>
 "map <S-Tab> :tabp<CR>

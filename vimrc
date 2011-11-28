@@ -50,6 +50,10 @@ let g:indent_guides_enable_on_vim_startup = 1
 " Navigate tabs with tabs
 imap <C-t> <Esc>:tabnew 
 map <C-t> :tabnew 
+
+nnoremap <silent> <C-t> :CommandT<CR>
+nnoremap <silent> <C-l> :CommandTBuffer<CR>
+
 "map t :tabnew<CR>:e 
 "map <Tab> :tabn<CR>
 "map <S-Tab> :tabp<CR>

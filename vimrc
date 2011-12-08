@@ -5,8 +5,8 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 " Options
-colorscheme BusyBee
 set background="dark"
+colorscheme BusyBee
 set number
 set hls
 set autoindent
@@ -16,6 +16,9 @@ set expandtab       " Everything I write uses spaces
 set tabstop=4
 set shiftwidth=4
 set cindent
+set incsearch
+set smartcase
+set nohidden
 
 " Autocomplete
 set completeopt=longest,menuone
@@ -55,8 +58,8 @@ nnoremap <silent> <C-t> :CommandT<CR>
 nnoremap <silent> <C-l> :CommandTBuffer<CR>
 
 "map t :tabnew<CR>:e 
-"map <Tab> :tabn<CR>
-"map <S-Tab> :tabp<CR>
+map <Tab> gt
+map <S-Tab> gT
 "map [Z :tabp<CR>
 
 

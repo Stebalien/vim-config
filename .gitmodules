@@ -43,3 +43,6 @@
 [submodule "bundle/python-indent"]
 	path = bundle/python-indent
 	url = https://github.com/vim-scripts/indentpython.vim.git
+[submodule "bundle/gundo"]
+	path = bundle/gundo
+	url = http://github.com/sjl/gundo.vim.git

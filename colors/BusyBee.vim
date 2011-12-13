@@ -38,7 +38,7 @@ hi SignColumn      guifg=#303030 guibg=#1a1a1a gui=none ctermfg=244 ctermbg=234
 
 " Syntax highlighting
 hi Comment         guifg=#3f3f3f gui=italic ctermfg=244
-hi Todo            guifg=#8f8f8f gui=none ctermfg=245
+hi Todo            guifg=#ff0f00 gui=italic ctermfg=214 ctermbg=none
 hi Boolean         guifg=#b1d631 gui=none ctermfg=148
 hi String          guifg=#606060 gui=none ctermfg=148
 hi Identifier      guifg=#b1d631 gui=none ctermfg=148
@@ -50,7 +50,6 @@ hi Constant        guifg=#ff9800 gui=none  ctermfg=208
 hi Number          guifg=#ff9800 gui=none ctermfg=208
 hi Special         guifg=#ff9800 gui=none ctermfg=208
 hi PreProc         guifg=#faf4c6 gui=none ctermfg=230
-hi Todo            guifg=#ff9f00 guibg=#202020 gui=none
 
 " Code-specific colors
 hi pythonImport    guifg=#009000 gui=none ctermfg=255

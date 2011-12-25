@@ -50,22 +50,20 @@ let g:indent_guides_guide_size = 1
 let g:indent_guides_enable_on_vim_startup = 1
 
 
-" Navigate tabs with tabs
-imap <C-t> <Esc>:tabnew 
-map <C-t> :tabnew 
+nnoremap <silent> <C-S-t> :CommandT<CR>
+nnoremap <silent> <C-S-l> :CommandTBuffer<CR>
 
-nnoremap <silent> <C-t> :CommandT<CR>
-nnoremap <silent> <C-l> :CommandTBuffer<CR>
+map <C-t> :tabnew 
 
 "map t :tabnew<CR>:e 
 map <Tab> gt
 map <S-Tab> gT
+map n gt
+map p gT
 "map [Z :tabp<CR>
 
 
 
-map <C-p> "*p
-map <C-y> "*y
 no Q q
 map q :q<CR>
 vmap ii <ESC>i

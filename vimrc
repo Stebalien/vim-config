@@ -20,6 +20,11 @@ set incsearch
 set smartcase
 set nohidden
 
+filetype plugin indent on
+set grepprg=grep\ -nH\ $*
+let g:tex_flavor="latex"
+let g:Tex_DefaultTargetFormat="pdf"
+
 " Autocomplete
 set completeopt=longest,menuone
 set wildmode=longest,full
@@ -50,10 +55,10 @@ let g:indent_guides_guide_size = 1
 let g:indent_guides_enable_on_vim_startup = 1
 
 
-nnoremap <silent> <C-S-t> :CommandT<CR>
-nnoremap <silent> <C-S-l> :CommandTBuffer<CR>
+"nnoremap <silent> <C-S-t> :CommandT<CR>
+"nnoremap <silent> <C-S-l> :CommandTBuffer<CR>
 
-map <C-t> :tabnew 
+"map <C-t> :tabnew 
 
 "map t :tabnew<CR>:e 
 map <Tab> gt
@@ -62,7 +67,8 @@ map n gt
 map p gT
 "map [Z :tabp<CR>
 
-
+map gc <leader>ci
+map gr :Reorder 
 
 no Q q
 map q :q<CR>
@@ -100,3 +106,8 @@ map <leader>T :noautocmd vimgrep /TODO\\|FIXME/j **/*<cr>:cw<CR>
 nnoremap <leader>o :silent execute '!xdg-open <C-R>=escape("<C-R><C-F>", "#?&;\|%")<CR> >/dev/null' \| redraw!<CR>
 
 nnoremap <C-h> :GundoToggle<CR>
+
+let g:UltiSnipsSnippetsDir="~/.vim/bundle/ultisnips/UltiSnips"
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"

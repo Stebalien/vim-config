@@ -1,0 +1,26 @@
+% {{{ Preamble
+\documentclass[pdftex,12pt,a4papaer]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{parskip}
+\pagestyle{fancy}
+% }}}
+
+\author{Steven Allen}
+\date{\today}
+\title{<TITLE>}
+
+% {{{ Header
+\rhead{\@date}
+\chead{\@title}
+\lhead{\@author}
+% }}}
+
+\begin{document}
+    \maketitle
+
+    
+
+\end{document}
+% vim: set foldmethod=marker: %

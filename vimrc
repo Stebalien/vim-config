@@ -19,11 +19,7 @@ set cindent
 set incsearch
 set smartcase
 set nohidden
-
-filetype plugin indent on
-set grepprg=grep\ -nH\ $*
-let g:tex_flavor="latex"
-let g:Tex_DefaultTargetFormat="pdf"
+set mouse=a
 
 " Autocomplete
 set completeopt=longest,menuone
@@ -58,58 +54,45 @@ let g:indent_guides_enable_on_vim_startup = 1
 "nnoremap <silent> <C-S-t> :CommandT<CR>
 "nnoremap <silent> <C-S-l> :CommandTBuffer<CR>
 
-"map <C-t> :tabnew 
-
-"map t :tabnew<CR>:e 
+map <C-t> :tabnew 
 map <Tab> gt
 map <S-Tab> gT
 map n gt
 map p gT
 "map [Z :tabp<CR>
 
+" Go Comment
 map gc <leader>ci
+" Go Reorder
 map gr :Reorder 
 
+" Misc shortcuts
 no Q q
 map q :q<CR>
 vmap ii <ESC>i
 
-set mouse=a
-
-fun Ranger()
-  silent !ranger --choosefile=/tmp/chosen
-  if filereadable('/tmp/chosen')
-    exec 'edit ' . system('cat /tmp/chosen')
-    call system('rm /tmp/chosen')
-  endif
-  redraw!
-endfun
-map <C-o> :call Ranger()<CR>
-
-function! s:ExecuteInShell(command)
-  let command = join(map(split(a:command), 'expand(v:val)'))
-  let winnr = bufwinnr('^' . command . '$')
-  silent! execute  winnr < 0 ? 'botright new ' . fnameescape(command) : winnr . 'wincmd w'
-  setlocal buftype=nowrite bufhidden=wipe nobuflisted noswapfile nowrap number
-  echo 'Execute ' . command . '...'
-  silent! execute 'silent %!'. command
-  silent! execute 'resize ' . line('$')
-  silent! redraw
-  silent! execute 'au BufUnload <buffer> execute bufwinnr(' . bufnr('#') . ') . ''wincmd w'''
-  silent! execute 'nnoremap <silent> <buffer> <LocalLeader>r :call <SID>ExecuteInShell(''' . command . ''')<CR>'
-  echo 'Shell command ' . command . ' executed.'
-endfunction
-command! -complete=shellcmd -nargs=+ Shell call s:ExecuteInShell(<q-args>)
-
+" Todo
 map <leader>t :g/TODO\\|FIXME/caddexpr expand("%") . ":" . line(".") . ":" . getline(".")<cr>:cw<CR><cr>
 map <leader>T :noautocmd vimgrep /TODO\\|FIXME/j **/*<cr>:cw<CR>
+
+" Open File
 nnoremap <leader>o :silent execute '!xdg-open <C-R>=escape("<C-R><C-F>", "#?&;\|%")<CR> >/dev/null' \| redraw!<CR>
 
+" Map Gundo
 nnoremap <C-h> :GundoToggle<CR>
 
+" UltiSnips
 let g:UltiSnipsSnippetsDir="~/.vim/bundle/ultisnips/UltiSnips"
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
+" Templates
 autocmd! BufNewFile * silent! 0r ~/.vim/templates/%:e
+
+" clear search highlighting on esc
+nmap <Esc> <Esc>:noh<CR>
+
+" Navigate through wrapped lines
+nmap j gj
+nmap k gk

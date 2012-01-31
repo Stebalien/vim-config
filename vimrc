@@ -20,6 +20,7 @@ set incsearch
 set smartcase
 set nohidden
 set mouse=a
+set modeline
 
 " Autocomplete
 set completeopt=longest,menuone

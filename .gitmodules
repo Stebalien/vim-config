@@ -55,3 +55,18 @@
 [submodule "bundle/ultisnips"]
 	path = bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
+[submodule "bundle/vim-markdown"]
+	path = bundle/vim-markdown
+	url = https://github.com/plasticboy/vim-markdown.git
+[submodule "bundle/vim-powerline"]
+	path = bundle/vim-powerline
+	url = https://github.com/Lokaltog/vim-powerline.git
+[submodule "bundle/vim-ipython"]
+	path = bundle/vim-ipython
+	url = https://github.com/ivanov/vim-ipython.git
+[submodule "bundle/web-indent"]
+	path = bundle/web-indent
+	url = https://github.com/lukaszb/vim-web-indent.git
+[submodule "bundle/matchit"]
+	path = bundle/matchit
+	url = https://github.com/vim-scripts/matchit.zip.git

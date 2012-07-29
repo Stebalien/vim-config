@@ -6,21 +6,24 @@ call pathogen#helptags()
 
 " Options
 set background="dark"
-colorscheme BusyBee
+colorscheme industrial
 set number
 set hls
-set autoindent
 set cursorline
 set showtabline=1   " Always show tabs
 set expandtab       " Everything I write uses spaces
 set tabstop=4
 set shiftwidth=4
-set cindent
 set incsearch
 set smartcase
 set nohidden
 set mouse=a
 set modeline
+set laststatus=2
+filetype indent on
+set clipboard=unnamed,exclude:cons\|linux
+
+set cryptmethod=blowfish
 
 " Autocomplete
 set completeopt=longest,menuone
@@ -62,14 +65,21 @@ map n gt
 map p gT
 "map [Z :tabp<CR>
 
+map \| :vsplit 
+map _ :split 
+map j <C-w>j
+map k <C-w>k
+map h <C-w>h
+map l <C-w>l
+
 " Go Comment
 map gc <leader>ci
 " Go Reorder
 map gr :Reorder 
 
 " Misc shortcuts
-no Q q
-map q :q<CR>
+no Q gqip
+"map q :q<CR>
 vmap ii <ESC>i
 
 " Todo
@@ -97,3 +107,28 @@ nmap <Esc> <Esc>:noh<CR>
 " Navigate through wrapped lines
 nmap j gj
 nmap k gk
+nmap Y y$
+
+
+fu! DeleteMethod()
+    let @y=@_
+    let @z=@_
+    normal! %"yyi(hh"zdi)
+    if @z != @_
+        echo "a"
+        normal! "yP
+    else
+        echo "b"
+        normal! ^D"yp
+    endif
+endfunction
+
+
+" Methods
+nmap dm  :call DeleteMethod()<cr>
+
+set fillchars=vert:│,fold:-
+
+digr \|= 8872 \|- 8871
+
+set directory^=$XDG_CACHE_HOME//

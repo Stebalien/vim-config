@@ -1,7 +1,7 @@
-set spell
+setlocal spell
 map q :wq<CR>
-set showtabline=0
-set whichwrap=b,s,<,>,[,]
-set nonumber
+setlocal showtabline=0
+setlocal whichwrap=b,s,<,>,[,]
+setlocal nonumber
 +/^$
 nohl

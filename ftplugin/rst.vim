@@ -1,3 +1,3 @@
 let @h = "yypVr"
-set spell
-set textwidth=80
+setlocal spell
+setlocal textwidth=80

@@ -138,3 +138,5 @@ set directory^=$XDG_CACHE_HOME//
 let g:qcc_query_command='goobook query'
 au BufRead $XDG_CACHE_HOME/mutt* setlocal omnifunc=QueryCommandComplete
 au BufRead $XDG_CACHE_HOME/mutt* let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+
+command W w " I hit W too often.

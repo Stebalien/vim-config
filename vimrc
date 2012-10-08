@@ -64,9 +64,6 @@ let g:indent_guides_enable_on_vim_startup = 1
 map <C-t> :tabnew 
 map <Tab> gt
 map <S-Tab> gT
-map n gt
-map p gT
-"map [Z :tabp<CR>
 
 map \| :vsplit 
 map _ :split 
@@ -135,3 +132,5 @@ set fillchars=vert:│,fold:-
 digr \|= 8872 \|- 8871
 
 set directory^=$XDG_CACHE_HOME//
+
+"let g:Powerline_symbols = 'fancy'

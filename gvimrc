@@ -1,3 +1,3 @@
-set guifont=Montecarlo\ 8
+set guifont=MonteCarlo\ 10
 set guioptions=aegiLt
 

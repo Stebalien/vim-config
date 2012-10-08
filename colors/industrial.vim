@@ -128,3 +128,6 @@ hi cspecialcharacter guifg=#c080d0 guibg=#404040 guisp=#404040 gui=NONE ctermfg=
 "hi htmlunderline -- no settings --
 hi htmllink guifg=#abcdef guibg=NONE guisp=NONE gui=NONE ctermfg=153 ctermbg=NONE cterm=NONE
 
+
+hi IndentGuidesOdd ctermbg=234
+hi IndentGuidesEven ctermbg=234

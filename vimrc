@@ -22,6 +22,10 @@ set laststatus=2
 filetype indent on
 set clipboard=unnamed,exclude:cons\|linux
 
+" Breaks arrows, makes esc imediate without timeoutlen=0
+set noek
+set timeoutlen=500
+
 set cryptmethod=blowfish
 
 " Autocomplete

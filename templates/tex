@@ -3,7 +3,9 @@
 \usepackage[pdftex]{graphicx}
 \usepackage{fancyhdr}
 \usepackage{setspace}
+\usepackage{hyperref}
 \usepackage{parskip}
+\usepackage{titling}
 \pagestyle{fancy}
 % }}}
 
@@ -12,9 +14,9 @@
 \title{<TITLE>}
 
 % {{{ Header
-\rhead{\@date}
-\chead{\@title}
-\lhead{\@author}
+\rhead{\thedate}
+\chead{\thetitle}
+\lhead{\theauthor}
 % }}}
 
 \begin{document}

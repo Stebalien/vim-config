@@ -134,3 +134,7 @@ digr \|= 8872 \|- 8871
 set directory^=$XDG_CACHE_HOME//
 
 "let g:Powerline_symbols = 'fancy'
+
+let g:qcc_query_command='goobook query'
+au BufRead $XDG_CACHE_HOME/mutt* setlocal omnifunc=QueryCommandComplete
+au BufRead $XDG_CACHE_HOME/mutt* let g:SuperTabDefaultCompletionType = "<c-x><c-o>"

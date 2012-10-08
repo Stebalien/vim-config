@@ -1,8 +1,7 @@
 " Global settings
 set encoding=utf8
 
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+call pathogen#infect()
 
 " Options
 set background="dark"

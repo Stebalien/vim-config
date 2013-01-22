@@ -78,7 +78,7 @@ hi Type guifg=#005f87 guibg=NONE guisp=NONE gui=NONE ctermfg=24 ctermbg=NONE cte
 hi DiffChange guifg=#ff97ff guibg=#2f002f guisp=#2f002f gui=NONE ctermfg=213 ctermbg=53 cterm=NONE
 hi Cursor guifg=#000000 guibg=#669933 guisp=#669933 gui=NONE ctermfg=NONE ctermbg=107 cterm=NONE
 "hi SpellLocal -- no settings --
-hi Error guifg=NONE guibg=#ff0000 guisp=#ff0000 gui=NONE ctermfg=NONE ctermbg=196 cterm=NONE
+hi Error guifg=NONE guibg=#ff0000 guisp=#ff0000 gui=NONE ctermfg=124 ctermbg=NONE cterm=underline
 hi PMenu guifg=#cccccc guibg=#000000 guisp=#000000 gui=NONE ctermfg=252 ctermbg=NONE cterm=NONE
 hi SpecialKey guifg=#378fff guibg=NONE guisp=NONE gui=NONE ctermfg=75 ctermbg=NONE cterm=NONE
 hi Constant guifg=#3a3a3a guibg=NONE guisp=NONE gui=bold ctermfg=237 ctermbg=NONE cterm=bold
@@ -89,7 +89,7 @@ hi PMenuThumb guifg=NONE guibg=#666666 guisp=#666666 gui=NONE ctermfg=NONE cterm
 "hi MatchParen -- no settings --
 "hi LocalVariable -- no settings --
 hi Repeat guifg=#556677 guibg=NONE guisp=NONE gui=NONE ctermfg=60 ctermbg=NONE cterm=NONE
-hi SpellBad guifg=NONE guibg=#ff0000 guisp=#ff0000 gui=NONE ctermfg=NONE ctermbg=196 cterm=NONE
+hi SpellBad guifg=NONE guibg=#ff0000 guisp=#ff0000 gui=NONE ctermfg=124 ctermbg=NONE cterm=underline
 "hi CTagsClass -- no settings --
 hi Directory guifg=#aaaaba guibg=NONE guisp=NONE gui=NONE ctermfg=250 ctermbg=NONE cterm=NONE
 hi Structure guifg=#556677 guibg=NONE guisp=NONE gui=NONE ctermfg=60 ctermbg=NONE cterm=NONE

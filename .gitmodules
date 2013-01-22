@@ -76,3 +76,6 @@
 [submodule "bundle/querycommandcomplete"]
 	path = bundle/querycommandcomplete
 	url = git://github.com/caio/querycommandcomplete.vim.git
+[submodule "bundle/jst"]
+	path = bundle/jst
+	url = git@github.com:briancollins/vim-jst.git

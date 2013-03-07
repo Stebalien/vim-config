@@ -90,7 +90,7 @@ map <leader>T :noautocmd vimgrep /TODO\\|FIXME/j **/*<cr>:cw<CR>
 nnoremap <leader>o :silent execute '!xdg-open <C-R>=escape("<C-R><C-F>", "#?&;\|%")<CR> >/dev/null' \| redraw!<CR>
 
 " Map Gundo
-nnoremap <C-h> :GundoToggle<CR>
+nnoremap <Backspace> :GundoToggle<CR>
 
 " UltiSnips
 let g:UltiSnipsSnippetsDir="~/.vim/bundle/ultisnips/UltiSnips"

@@ -140,3 +140,5 @@ au BufRead $XDG_CACHE_HOME/mutt* setlocal omnifunc=QueryCommandComplete
 au BufRead $XDG_CACHE_HOME/mutt* let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 
 command W w " I hit W too often.
+
+let g:showmarks_include="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"

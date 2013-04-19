@@ -82,3 +82,9 @@
 [submodule "bundle/vala"]
 	path = bundle/vala
 	url = git://github.com/rainux/vim-vala.git
+[submodule "bundle/showmarks"]
+	path = bundle/showmarks
+	url = git://github.com/vim-scripts/ShowMarks.git
+[submodule "bundle/fish"]
+	path = bundle/fish
+	url = git://github.com/aliva/vim-fish.git

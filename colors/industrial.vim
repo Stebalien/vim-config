@@ -8,7 +8,10 @@ if version > 580
 	endif
 endif
 
-set t_Co=256
+if (&term == "linux")
+    set t_Co=256
+endif
+
 let g:colors_name = "industrial"
 
 hi IncSearch guifg=#222222 guibg=#ffff00 guisp=#ffff00 gui=NONE ctermfg=235 ctermbg=11 cterm=NONE

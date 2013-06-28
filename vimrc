@@ -1,11 +1,13 @@
 " Global settings
 set encoding=utf8
+set runtimepath=$XDG_CONFIG_HOME/vim,$XDG_CONFIG_HOME/vim/after,$VIM,$VIMRUNTIME
 
 call pathogen#infect()
 
 " Options
 set background="dark"
 colorscheme industrial
+set viminfo+=n$XDG_CACHE_HOME/viminfo
 set number
 set hls
 set cursorline
@@ -49,7 +51,7 @@ let $PAGER=''
 
 " Closetag
 autocmd FileType html,htmldjango,jinjahtml,eruby,mako let b:closetag_html_style=1
-autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako source ~/.vim/bundle/closetag/plugin/closetag.vim
+autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako source $XDG_CONFIG_HOME/vim/bundle/closetag/plugin/closetag.vim
 
 " Indent guides
 let g:indent_guides_auto_colors = 0
@@ -93,13 +95,13 @@ nnoremap <leader>o :silent execute '!xdg-open <C-R>=escape("<C-R><C-F>", "#?&;\|
 nnoremap <Backspace> :GundoToggle<CR>
 
 " UltiSnips
-let g:UltiSnipsSnippetsDir="~/.vim/bundle/ultisnips/UltiSnips"
+let g:UltiSnipsSnippetsDir="$XDG_CONFIG_HOME/vim/bundle/ultisnips/UltiSnips"
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 " Templates
-autocmd! BufNewFile * silent! 0r ~/.vim/templates/%:e
+autocmd! BufNewFile * silent! 0r $XDG_CONFIG_HOME/.vim/templates/%:e
 
 " clear search highlighting on esc
 nmap <Esc> <Esc>:noh<CR>

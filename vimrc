@@ -4,12 +4,18 @@ set runtimepath=$XDG_CONFIG_HOME/vim,$XDG_CONFIG_HOME/vim/after,$VIM/vimfiles,$V
 
 call pathogen#infect()
 
-" Options
+" Syntax
+syntax on
+filetype plugin indent on
 set background="dark"
 colorscheme industrial
+
+" Options
 set viminfo+=n$XDG_CACHE_HOME/viminfo
 set number
+set autoindent
 set hls
+set ofu=syntaxcomplete#Complete
 set cursorline
 set showtabline=1   " Always show tabs
 set expandtab       " Everything I write uses spaces

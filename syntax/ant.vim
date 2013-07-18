@@ -86,6 +86,7 @@ syn keyword antElement display vsscheckout vsscp vsscreate vssget vsshistory vss
 syn keyword antElement display webapp webinf weblogic weblogictoplink websphere whichresource wlclasspath
 syn keyword antElement display wljspc wsdltodotnet xmlcatalog xmlproperty xmlvalidate xslt zip zipfileset
 syn keyword antElement display zipgroupfileset
+syn keyword antElement display if then else extension-point
 
 hi def link antElement Statement
 

@@ -6,11 +6,7 @@
 
 " Read the HTML syntax to start with
 runtime! syntax/html.vim
-unlet b:current_syntax
 
-if exists("b:current_syntax")
-  finish
-endif
 syn region jstBlock containedin=ALL start="<%=" keepend end="%>" contains=@htmlJavaScript,htmlCssStyleComment,htmlScriptTag,@htmlPreproc
 syn region jstBlock containedin=ALL start="<%" keepend end="%>" contains=@htmlJavaScript,htmlCssStyleComment,htmlScriptTag,@htmlPreproc
 

@@ -43,8 +43,15 @@ match RedundantSpaces / \+\ze\t/
 " Taglist
 nnoremap <silent> <F8> :TlistToggle<CR>
 
+function WriteSudo()
+    silent! write ! sudo tee % >/dev/null
+    silent! edit!
+endfunction
+
+cmap w!! :call WriteSudo()<CR>
+
 " In case I forget to start as root
-cmap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>
+command W w
 
 " For Vim as man
 let $PAGER=''
@@ -140,7 +147,5 @@ set directory^=$XDG_CACHE_HOME//
 let g:qcc_query_command='goobook query'
 au BufRead $XDG_CACHE_HOME/mutt* setlocal omnifunc=QueryCommandComplete
 au BufRead $XDG_CACHE_HOME/mutt* let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
-
-command W w " I hit W too often.
 
 let g:showmarks_include="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"

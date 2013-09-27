@@ -114,7 +114,7 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 " Templates
-autocmd! BufNewFile * silent! 0r $XDG_CONFIG_HOME/.vim/templates/%:e
+autocmd! BufNewFile * silent! 0r $XDG_CONFIG_HOME/vim/templates/%:e
 
 " clear search highlighting on esc
 nmap <Esc> <Esc>:noh<CR>

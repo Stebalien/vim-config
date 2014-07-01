@@ -1,4 +1,5 @@
 " Global settings
+set nocp
 set encoding=utf8
 set runtimepath=$XDG_CONFIG_HOME/vim,$XDG_CONFIG_HOME/vim/after,$VIM/vimfiles,$VIMRUNTIME
 
@@ -50,7 +51,7 @@ match RedundantSpaces / \+\ze\t/
 nnoremap <silent> <F8> :TlistToggle<CR>
 
 function WriteSudo()
-    silent! write ! sudo tee % >/dev/null
+    silent! write ! sudo tee "%" >/dev/null
     silent! edit!
 endfunction
 
@@ -150,8 +151,14 @@ set directory^=$XDG_CACHE_HOME//
 
 "let g:Powerline_symbols = 'fancy'
 
-let g:qcc_query_command='goobook query'
+let g:qcc_query_command='lbdbq'
 au BufRead $XDG_CACHE_HOME/mutt* setlocal omnifunc=QueryCommandComplete
 au BufRead $XDG_CACHE_HOME/mutt* let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 
 let g:showmarks_include="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+let g:markdown_fenced_languages = ["kotlin", "javascript", "css", "html", "python", "java"]
+
+autocmd FileType tex :NoMatchParen
+au FileType tex setlocal nocursorline
+
+let g:javascript_conceal=1

@@ -1,7 +1,8 @@
 " Global settings
 set nocp
 set encoding=utf8
-set runtimepath=$XDG_CONFIG_HOME/vim,$XDG_CONFIG_HOME/vim/after,$VIM/vimfiles,$VIMRUNTIME
+set runtimepath=$XDG_CONFIG_HOME/nvim,$XDG_CONFIG_HOME/nvim/after,$VIM/vimfiles,$VIMRUNTIME
+set backspace=2
 
 call pathogen#infect()
 
@@ -29,13 +30,14 @@ set mouse=a
 set modeline
 set laststatus=2
 filetype indent on
-set clipboard=unnamed,exclude:cons\|linux
+set clipboard=unnamed
+set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
+set formatoptions+=j " Delete comment character when joining commented lines.
+set tabpagemax=50
 
 " Breaks arrows, makes esc imediate without timeoutlen=0
 set noek
 set timeoutlen=500
-
-set cryptmethod=blowfish
 
 " Autocomplete
 set completeopt=longest,menuone
@@ -65,7 +67,7 @@ let $PAGER=''
 
 " Closetag
 autocmd FileType html,htmldjango,jinjahtml,eruby,mako let b:closetag_html_style=1
-autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako source $XDG_CONFIG_HOME/vim/bundle/closetag/plugin/closetag.vim
+autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako source $XDG_CONFIG_HOME/nvim/bundle/closetag/plugin/closetag.vim
 
 " Indent guides
 let g:indent_guides_auto_colors = 0
@@ -156,9 +158,13 @@ au BufRead $XDG_CACHE_HOME/mutt* setlocal omnifunc=QueryCommandComplete
 au BufRead $XDG_CACHE_HOME/mutt* let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 
 let g:showmarks_include="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-let g:markdown_fenced_languages = ["kotlin", "javascript", "css", "html", "python", "java"]
+let g:markdown_fenced_languages = ["kotlin", "javascript", "css", "html", "python", "java", "rust"]
 
 autocmd FileType tex :NoMatchParen
 au FileType tex setlocal nocursorline
 
 let g:javascript_conceal=1
+let g:airline_right_sep=' ◀'
+let g:airline_left_sep='▶ '
+let g:airline_theme='powerlineish'
+let g:airline#extensions#tabline#enabled = 1

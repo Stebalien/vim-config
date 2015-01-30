@@ -88,3 +88,6 @@
 [submodule "bundle/mundo"]
 	path = bundle/mundo
 	url = https://github.com/simnalamburt/vim-mundo.git
+[submodule "bundle/rust.vim"]
+	path = bundle/rust.vim
+	url = https://github.com/rust-lang/rust.vim

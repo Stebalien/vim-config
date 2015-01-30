@@ -97,9 +97,6 @@
 [submodule "bundle/rename"]
 	path = bundle/rename
 	url = https://github.com/danro/rename.vim.git
-[submodule "bundle/rust.vim"]
-	path = bundle/rust.vim
-	url = https://github.com/wting/rust.vim.git
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git

@@ -41,7 +41,7 @@ hi Todo guifg=#ff9d00 guibg=NONE guisp=NONE gui=NONE ctermfg=214 ctermbg=NONE ct
 hi Special guifg=#cccccc guibg=NONE guisp=NONE gui=NONE ctermfg=252 ctermbg=NONE cterm=NONE
 hi LineNr guifg=#666666 guibg=#000000 guisp=#000000 gui=NONE ctermfg=241 ctermbg=0 cterm=NONE
 hi StatusLine guifg=#ffffff guibg=#000000 guisp=#000000 gui=NONE ctermfg=15 ctermbg=NONE cterm=NONE
-hi Normal guifg=#a8a8a8 guibg=#151515 guisp=#111111 gui=NONE ctermfg=248 ctermbg=NONE cterm=NONE
+hi Normal guifg=#a8a8a8 guibg=#050505 guisp=#111111 gui=NONE ctermfg=248 ctermbg=NONE cterm=NONE
 hi Label guifg=#556677 guibg=NONE guisp=NONE gui=NONE ctermfg=60 ctermbg=NONE cterm=NONE
 "hi CTagsImport -- no settings --
 hi PMenuSel guifg=#ffffff guibg=#003366 guisp=#003366 gui=NONE ctermfg=15 ctermbg=17 cterm=NONE
@@ -84,10 +84,10 @@ hi Cursor guifg=#000000 guibg=#669933 guisp=#669933 gui=NONE ctermfg=NONE ctermb
 hi Error guifg=NONE guibg=#ff0000 guisp=#ff0000 gui=NONE ctermfg=124 ctermbg=NONE cterm=underline
 hi PMenu guifg=#cccccc guibg=#000000 guisp=#000000 gui=NONE ctermfg=252 ctermbg=NONE cterm=NONE
 hi SpecialKey guifg=#378fff guibg=NONE guisp=NONE gui=NONE ctermfg=75 ctermbg=NONE cterm=NONE
-hi Constant guifg=#3a3a3a guibg=NONE guisp=NONE gui=bold ctermfg=237 ctermbg=NONE cterm=bold
+hi Constant guifg=#3a3a3a guibg=NONE guisp=NONE gui=bold ctermfg=238 ctermbg=NONE cterm=bold
 "hi DefinedName -- no settings --
 hi Tag guifg=#cccccc guibg=NONE guisp=NONE gui=NONE ctermfg=252 ctermbg=NONE cterm=NONE
-hi String guifg=#414141 guibg=NONE guisp=NONE gui=NONE ctermfg=238 ctermbg=NONE cterm=NONE
+hi String guifg=#414141 guibg=NONE guisp=NONE gui=NONE ctermfg=240 ctermbg=NONE cterm=NONE
 hi PMenuThumb guifg=NONE guibg=#666666 guisp=#666666 gui=NONE ctermfg=NONE ctermbg=241 cterm=NONE
 "hi MatchParen -- no settings --
 "hi LocalVariable -- no settings --

@@ -9,8 +9,13 @@ call pathogen#infect()
 " Syntax
 syntax on
 filetype plugin indent on
-set background="dark"
-colorscheme industrial
+if $COLORSCHEME == "light"
+    colorscheme summerfruit256
+    let g:airline_theme="light"
+else
+    colorscheme industrial
+    let g:airline_theme="powerlineish"
+endif
 
 " Options
 set viminfo+=n$XDG_CACHE_HOME/viminfo
@@ -166,10 +171,10 @@ au FileType tex setlocal nocursorline
 let g:javascript_conceal=1
 let g:airline_right_sep=' ◀'
 let g:airline_left_sep='▶ '
-let g:airline_theme='powerlineish'
 let g:airline#extensions#tabline#enabled = 1
 
 " Racer
 set hidden
 let g:racer_cmd = $XDG_CONFIG_HOME/"nvim/bundle/racer/target/release/racer"
 let $RUST_SRC_PATH="/usr/src/rust/src/"
+

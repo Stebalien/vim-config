@@ -94,3 +94,6 @@
 [submodule "bundle/markdown"]
 	path = bundle/markdown
 	url = https://github.com/plasticboy/vim-markdown.git
+[submodule "bundle/racer"]
+	path = bundle/racer
+	url = https://github.com/racer-rust/vim-racer.git

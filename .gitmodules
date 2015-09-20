@@ -94,3 +94,6 @@
 [submodule "bundle/capnp"]
 	path = bundle/capnp
 	url = https://github.com/cstrahan/vim-capnp.git
+[submodule "bundle/markdown"]
+	path = bundle/markdown
+	url = https://github.com/plasticboy/vim-markdown.git

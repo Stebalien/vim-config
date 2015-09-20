@@ -1,7 +1,7 @@
 " Global settings
 set nocp
 set encoding=utf8
-set runtimepath=$XDG_CONFIG_HOME/nvim,$XDG_CONFIG_HOME/nvim/after,$VIM/vimfiles,$VIMRUNTIME
+set runtimepath=/usr/share/vim/vimfiles/,$XDG_CONFIG_HOME/nvim,$XDG_CONFIG_HOME/nvim/after,$VIM/vimfiles,$VIMRUNTIME
 set backspace=2
 
 call pathogen#infect()
@@ -13,7 +13,7 @@ if $COLORSCHEME == "light"
     colorscheme summerfruit256
     let g:airline_theme="light"
 else
-    colorscheme industrial
+    colorscheme rdark
     let g:airline_theme="powerlineish"
 endif
 
@@ -156,7 +156,6 @@ digr \|= 8872 \|- 8871
 
 set directory^=$XDG_CACHE_HOME//
 
-"let g:Powerline_symbols = 'fancy'
 
 let g:qcc_query_command='lbdbq'
 au BufRead $XDG_CACHE_HOME/mutt* setlocal omnifunc=QueryCommandComplete
@@ -169,12 +168,14 @@ autocmd FileType tex :NoMatchParen
 au FileType tex setlocal nocursorline
 
 let g:javascript_conceal=1
-let g:airline_right_sep=' ◀'
-let g:airline_left_sep='▶ '
+let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
 " Racer
 set hidden
-let g:racer_cmd = $XDG_CONFIG_HOME/"nvim/bundle/racer/target/release/racer"
-let $RUST_SRC_PATH="/usr/src/rust/src/"
 
+let g:vim_markdown_frontmatter=1
+
+let g:gundo_prefer_python3 = 1
+
+digr ZZ 8484 RR 8477 NN 8469

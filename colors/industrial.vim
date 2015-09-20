@@ -16,7 +16,7 @@ let g:colors_name = "industrial"
 
 hi IncSearch guifg=#222222 guibg=#ffff00 guisp=#ffff00 gui=NONE ctermfg=235 ctermbg=11 cterm=NONE
 hi WildMenu guifg=#ffffff guibg=#336699 guisp=#336699 gui=NONE ctermfg=15 ctermbg=67 cterm=NONE
-hi SignColumn ctermbg=235
+hi SignColumn guibg=#262626 ctermbg=235
 hi SpecialComment guifg=#cccccc guibg=NONE guisp=NONE gui=NONE ctermfg=252 ctermbg=NONE cterm=NONE
 hi Typedef guifg=#556677 guibg=NONE guisp=NONE gui=NONE ctermfg=60 ctermbg=NONE cterm=NONE
 hi Title guifg=#ffbf9f guibg=NONE guisp=NONE gui=NONE ctermfg=223 ctermbg=NONE cterm=NONE
@@ -132,9 +132,9 @@ hi cspecialcharacter guifg=#c080d0 guibg=#404040 guisp=#404040 gui=NONE ctermfg=
 hi htmllink guifg=#abcdef guibg=NONE guisp=NONE gui=NONE ctermfg=153 ctermbg=NONE cterm=NONE
 
 
-hi IndentGuidesOdd ctermbg=234
-hi IndentGuidesEven ctermbg=234
-hi ShowMarksHLl ctermfg=70 ctermbg=235
-hi ShowMarksHLu ctermfg=70 ctermbg=235
-hi ShowMarksHLo ctermfg=70 ctermbg=235
-hi ShowMarksHLm ctermfg=70 ctermbg=233
+hi IndentGuidesOdd guibg=#1C1C1C ctermbg=234
+hi IndentGuidesEven guibg=#1C1C1C ctermbg=234
+hi ShowMarksHLl guibg=#262626 guifg=#9CDE00 ctermfg=70 ctermbg=235
+hi ShowMarksHLu guibg=#262626 guifg=#9CDE00 ctermfg=70 ctermbg=235
+hi ShowMarksHLo guibg=#262626 guifg=#9CDE00 ctermfg=70 ctermbg=235
+hi ShowMarksHLm guibg=#262626 guifg=#9CDE00 ctermfg=70 ctermbg=233

@@ -1,7 +1,6 @@
 " Global settings
-set nocp
 set encoding=utf8
-set runtimepath=/usr/share/vim/vimfiles/,$XDG_CONFIG_HOME/nvim,$XDG_CONFIG_HOME/nvim/after,$VIM/vimfiles,$VIMRUNTIME
+set runtimepath+=/usr/share/vim/vimfiles/
 set backspace=2
 
 call pathogen#infect()
@@ -18,13 +17,12 @@ else
 endif
 
 " Options
-set viminfo+=n$XDG_CACHE_HOME/viminfo
 set number
 set autoindent
 set hls
 set ofu=syntaxcomplete#Complete
 set cursorline
-set showtabline=1   " Always show tabs
+set showtabline=0   " Always show tabs
 set expandtab       " Everything I write uses spaces
 set tabstop=4
 set shiftwidth=4
@@ -122,7 +120,7 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 " Templates
-autocmd! BufNewFile * silent! 0r $XDG_CONFIG_HOME/vim/templates/%:e
+autocmd! BufNewFile * silent! 0r $XDG_CONFIG_HOME/nvim/templates/%:e
 
 " clear search highlighting on esc
 nmap <Esc> <Esc>:noh<CR>
@@ -154,9 +152,6 @@ set fillchars=vert:│,fold:-
 
 digr \|= 8872 \|- 8871
 
-set directory^=$XDG_CACHE_HOME//
-
-
 let g:qcc_query_command='lbdbq'
 au BufRead $XDG_CACHE_HOME/mutt* setlocal omnifunc=QueryCommandComplete
 au BufRead $XDG_CACHE_HOME/mutt* let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
@@ -177,5 +172,7 @@ set hidden
 let g:vim_markdown_frontmatter=1
 
 let g:gundo_prefer_python3 = 1
+let g:rainbow_active = 1
 
-digr ZZ 8484 RR 8477 NN 8469
+digr ZZ 8484 RR 8477 NN 8469 OX 8853 _i 7522 _j 11388 ^n 8319
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
